@@ -1,7 +1,12 @@
+window.onload = function() {
+    loadTodos();
+}
+
 function newTodo() {
     var listItem = document.createElement("li");
     var inputValue = document.getElementById("todoInput").value;
-    var text = document.createTextNode(inputValue);
+    var inputDate = document.getElementById("todoDate").value;
+    var text = document.createTextNode(inputValue + " - " + inputDate);
     listItem.appendChild(text);
 
     if (inputValue === '') {
@@ -10,6 +15,7 @@ function newTodo() {
         document.getElementById("todoItems").appendChild(listItem);
     }
     document.getElementById("todoInput").value = "";
+    document.getElementById("todoDate").value = "";
 
     var span = document.createElement("SPAN");
     var txt = document.createTextNode("\u00D7");
@@ -22,10 +28,38 @@ function newTodo() {
         close[i].onclick = function() {
             var div = this.parentElement;
             div.style.display = "none";
+            saveTodos();
         }
     }
 
     listItem.onclick = function() {
         this.classList.toggle('checked');
+        saveTodos();
+    }
+
+    saveTodos();
+}
+
+function saveTodos() {
+    var lis = document.getElementById("todoItems").getElementsByTagName("li");
+    var todos = [];
+    for (var i = 0; i < lis.length; i++) {
+        todos.push({todo: lis[i].innerText, checked: lis[i].classList.contains('checked')});
+    }
+    localStorage.setItem("todos", JSON.stringify(todos));
+}
+
+function loadTodos() {
+    var todos = JSON.parse(localStorage.getItem("todos"));
+    if (todos) {
+        var ul = document.getElementById("todoItems");
+        for (var i = 0; i < todos.length; i++) {
+            var li = document.createElement("li");
+            if (todos[i].checked) {
+                li.classList.add('checked');
+            }
+            li.appendChild(document.createTextNode(todos[i].todo));
+            ul.appendChild(li);
+        }
     }
 }
