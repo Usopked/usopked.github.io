@@ -28,6 +28,7 @@ function newTodo() {
         close[i].onclick = function() {
             var div = this.parentElement;
             div.style.display = "none";
+            div.remove();
             saveTodos();
         }
     }
@@ -44,7 +45,9 @@ function saveTodos() {
     var lis = document.getElementById("todoItems").getElementsByTagName("li");
     var todos = [];
     for (var i = 0; i < lis.length; i++) {
-        todos.push({todo: lis[i].innerText, checked: lis[i].classList.contains('checked')});
+        if (lis[i].style.display !== "none") {
+            todos.push({todo: lis[i].innerText, checked: lis[i].classList.contains('checked')});
+        }
     }
     localStorage.setItem("todos", JSON.stringify(todos));
 }
