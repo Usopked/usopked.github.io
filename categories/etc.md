@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Jekyll
+title: etc
 permalink: /blog/categories/etc/
 ---
 
