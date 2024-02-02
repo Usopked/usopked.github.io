@@ -1,13 +1,13 @@
 ---
 layout: page
-title: 데이터_분석
-permalink: /blog/categories/데이터_분석/
+title: Spec
+permalink: /blog/categories/Spec/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
 
 <div class="card">
-{% for post in site.categories.데이터_분석 %}
+{% for post in site.categories.Spec %}
  <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </div>

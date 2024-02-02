@@ -1,13 +1,13 @@
 ---
 layout: page
-title: 기타_공부
-permalink: /blog/categories/기타_공부/
+title: Project
+permalink: /blog/categories/Project/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
 
 <div class="card">
-{% for post in site.categories.기타_공부 %}
+{% for post in site.categories.Project %}
  <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </div>

@@ -1,13 +1,13 @@
 ---
 layout: page
-title: 군대
-permalink: /blog/categories/군대/
+title: Study
+permalink: /blog/categories/Study/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
 
 <div class="card">
-{% for post in site.categories.군대 %}
+{% for post in site.categories.Study %}
  <li class="category-posts"><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
 {% endfor %}
 </div>
