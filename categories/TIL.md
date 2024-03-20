@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Spec
-permalink: /blog/categories/Spec/
+title: TIL
+permalink: /blog/categories/TIL/
 ---
 
 <h5> Posts by Category : {{ page.title }} </h5>
