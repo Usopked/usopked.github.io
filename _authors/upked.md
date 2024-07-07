@@ -1,7 +1,7 @@
 ---
 name: Sejun Jeong
 username: upked
-bio: "꿈만큼은 누구에게도 지지 않는 개발자 지망생"
+bio: "Seize the day with programming"
 site: https://usopked.github.io
 avatar: upked.png
 email: usopked16496@gmail.com
