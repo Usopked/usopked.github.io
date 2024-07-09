@@ -19,8 +19,14 @@ $(document).ready(function() {
       }, 500);
     });
 
+    // 'input' 이벤트로 변경하여 한글 입력 처리 개선
+    $('.search-form-container').on('input', function(event) {
+      // input 이벤트로 변경 후 특정 입력 처리가 필요 없는 경우 여기에 코드 추가
+    });
+
+    // ESC 키를 위한 별도의 'keyup' 이벤트 리스너
     $('.search-form-container').on('keyup', function(event) {
-      if (event.keyCode == 27) {
+      if (event.keyCode == 27) { // ESC 키
         $('.search-form-container').removeClass('is-active');
       }
     });
@@ -34,7 +40,7 @@ $(document).ready(function() {
       onKeyUp         : true,
       rss             : base_url + '/feed.xml',
       zeroResultsInfo : false,
-      info_template   : "<h4 class='heading'>Number of posts found: {{amount}}</h4>",
+      info_template   : "<h4 class='heading'>찾은 포스트 수: {{amount}}</h4>",
       result_template : search_result_template,
       before: function() {
         search_results.fadeIn();
