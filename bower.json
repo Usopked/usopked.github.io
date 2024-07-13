@@ -7,6 +7,9 @@
   "description": "Usopked's blog from jekyll-theme",
   "main": "",
   "keywords": [
+    "jekyll-theme",
+    "jekyll",
+    "gallery"
     "usopked"
   ],
   "license": "MIT",
