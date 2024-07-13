@@ -1,7 +1,7 @@
 ---
 title: Styleguide
 layout: page
-permalink: /styleguide/
+permalink: /tag-index/
 ---
 
 
