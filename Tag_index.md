@@ -1,11 +1,11 @@
 ---
-title: Styleguide
+title: TagIndex
 layout: page
-permalink: /tag-index/
+permalink: /tagindex/
 ---
 
 
-### devlopr - Styleguide
+### devlopr - TagIndex
 
 <hr />
 
