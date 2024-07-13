@@ -1,15 +1,13 @@
 {
-  "name": "devlopr-jekyll",
-  "homepage": "https://github.com/sujaykundu777/devlopr-jekyll",
+  "name": "usopked",
+  "homepage": "https://github.com/Usopked/usopked.github.io",
   "authors": [
-    "sujaykundu777 <sujaykundu777@gmail.com>"
+    "usopked <usopked16496@gmail.com>"
   ],
-  "description": "A Jekyll Theme Built For Developers",
+  "description": "Usopked's blog from jekyll-theme",
   "main": "",
   "keywords": [
-    "jekyll-theme",
-    "jekyll",
-    "gallery"
+    "usopked"
   ],
   "license": "MIT",
   "ignore": [
