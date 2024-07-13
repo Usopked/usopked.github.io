@@ -84,15 +84,6 @@ dribbble_username: null
 flickr_username: null
 
 
-# disqus_shortname: sujay-kundu
-hyvor_talk_website_id: 476
-
-# wakatime username (coding activity)
-wakatime_username: sujaykundu777
-
-# mailchimp embedded form url (newsletter):
-mailchimp_form_url: https://sujaykundu.us10.list-manage.com/subscribe/post?u=50bab1c85eae24ecfb0f68361&amp;id=3a2dd721d0
-
 # contact form - (choose formspress or getform)
 # getform_endpoint: 83b703c3-9e47-4df4-ac55-e24d7eb02abc
 formspree_email: usopked16496@gmail.com
@@ -190,6 +181,10 @@ jekyll_admin:
 # firebase - For Firebase Hosting
 
 exclude:
+  - assets/bower_components
+  - assets/img
+  - assets/css
+  - assets/js
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/
