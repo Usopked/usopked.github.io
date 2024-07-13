@@ -3,7 +3,7 @@ subtitle: Seize the day with programming
 description: abc
 
 url: "https://usopked.github.io"
-baseurl: "/about"
+baseurl: ""
 
 # Navigation
 urls:
