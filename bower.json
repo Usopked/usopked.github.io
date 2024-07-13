@@ -1,6 +1,7 @@
 {
-  "name": "usopked",
-  "homepage": "https://github.com/Usopked/usopked.github.io",
+  "name": "devlopr-jekyll",
+  "homepage": "https://github.com/sujaykundu777/devlopr-jekyll",
+
   "authors": [
     "usopked <usopked16496@gmail.com>"
   ],
@@ -9,8 +10,8 @@
   "keywords": [
     "jekyll-theme",
     "jekyll",
-    "gallery"
-    "usopked"
+    "gallery",
+    "usopked",
   ],
   "license": "MIT",
   "ignore": [
@@ -18,6 +19,6 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
   ]
 }
